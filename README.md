@@ -87,3 +87,15 @@
   * push to server
 
 # Mix
+1. start a Feature: `feature_4`
+  * copy file `feature_1.txt` to `feature_4.txt`
+  * input `Test4-1` in `feature_1.txt`
+2. Bug Happended and back to sourcetree, stage changes, and click `Stash` on top menu
+  * input `back_to_bug`
+  * `stashes` in sourcetree
+  * no `Test3-1` in `feature_1.txt` and `feature4.txt` will be not in source path.
+3. Start a Hotfix: `bug3`
+  * input `fix5` and `fix6` to `feature_1.txt` and commit `feature_1.txt`
+4. Finish a Hotfix
+  * mention: auto merge to `develop` and `master`
+5. checkout to `feature_2` and merge `develop`
