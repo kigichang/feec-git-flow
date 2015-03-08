@@ -86,7 +86,7 @@
   * checkout to `master` and compare content in source path
   * push to server
 
-# Mix
+# Mix - Stash
 1. start a Feature: `feature_4`
   * copy file `feature_1.txt` to `feature_4.txt`
   * input `Test4-1` in `feature_1.txt`
@@ -94,8 +94,19 @@
   * input `back_to_bug`
   * `stashes` in sourcetree
   * no `Test3-1` in `feature_1.txt` and `feature4.txt` will be not in source path.
-3. Start a Hotfix: `bug3`
+3. Start a Hotfix: `bug4`
   * input `fix5` and `fix6` to `feature_1.txt` and commit `feature_1.txt`
 4. Finish a Hotfix
   * mention: auto merge to `develop` and `master`
-5. checkout to `feature_2` and merge `develop`
+5. checkout to `feature_4` and merge `develop`
+
+# Mix - Commit
+1. start a Feature: `feature_5`
+  * copy file `feature_1.txt` to `feature_5.txt`
+  * input `Test5-1` in `feature_1.txt`
+2. Bug Happended and back to sourcetree, commit current change
+3. Start a Hotfix: `bug5`
+  * input `fix7` and `fix8` to `feature_1.txt` and commit `feature_1.txt`
+4. Finish a Hotfix
+  * mention: auto merge to `develop` and `master`
+5. checkout to `feature_5` and merge `develop`
