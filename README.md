@@ -43,7 +43,7 @@
 1. back to SourceTree and click `Git Flow` on top menu
 2. click `Start New Feature`, input `feature_1`, and choose `Lastest development branch`
 3. see new branch `feature_1` in sourcetree
-4. deveoping
+4. developing
   * add new file `feature_1.txt` in source path
   * input content `Test1` and commit
   * input content `Test22` and commit (demo hotfix later)
@@ -87,26 +87,31 @@
   * push to server
 
 # Mix - Stash
-1. start a Feature: `feature_4`
-  * copy file `feature_1.txt` to `feature_4.txt`
-  * input `Test4-1` in `feature_1.txt`
-2. Bug Happended and back to sourcetree, stage changes, and click `Stash` on top menu
+1. start a Feature: `feature_2`
+  * copy file `feature_1.txt` to `feature_2.txt`
+  * input `Test2-1` in `feature_1.txt`
+2. Bug happening and back to sourcetree, add stage changes, and click `Stash` on top menu
   * input `back_to_bug`
   * `stashes` in sourcetree
-  * no `Test3-1` in `feature_1.txt` and `feature4.txt` will be not in source path.
-3. Start a Hotfix: `bug4`
-  * input `fix5` and `fix6` to `feature_1.txt` and commit `feature_1.txt`
+  * no `Test2-1` in `feature_1.txt` and `feature2.txt` will be not in source path.
+3. Start a Hotfix: `bug2`
+  * input `fix1` and `fix2` to `feature_1.txt` and commit `feature_1.txt`
 4. Finish a Hotfix
   * mention: auto merge to `develop` and `master`
-5. checkout to `feature_4` and merge `develop`
+5. checkout to `feature_2` and merge `develop`
+6. apply stash
+7. add `Test2-2` in `feature_1.txt` and commit it
+8. finish feature
+9. start and finish release
 
-# Mix - Commit
-1. start a Feature: `feature_5`
-  * copy file `feature_1.txt` to `feature_5.txt`
-  * input `Test5-1` in `feature_1.txt`
-2. Bug Happended and back to sourcetree, commit current change
-3. Start a Hotfix: `bug5`
-  * input `fix7` and `fix8` to `feature_1.txt` and commit `feature_1.txt`
+# Mix - Commit (do not suggest)
+1. start a Feature: `feature_3`
+  * copy file `feature_1.txt` to `feature_3.txt`
+  * input `Test3-1` in `feature_1.txt`
+2. Bug happening and back to sourcetree, commit current change
+3. Start a Hotfix: `bug3`
+  * input `fix3` and `fix4` to `feature_1.txt` and commit `feature_1.txt`
 4. Finish a Hotfix
   * mention: auto merge to `develop` and `master`
-5. checkout to `feature_5` and merge `develop`
+5. checkout to `feature_3` and merge `develop`
+6. finish the feature without rebase (rebase will be error)
