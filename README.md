@@ -38,3 +38,52 @@
   * `Push` on top menu
   * click `develop` and check Remote branch `develop`
 6. See `develop` branch on GitHub
+
+# Start Feature
+1. back to SourceTree and click `Git Flow` on top menu
+2. click `Start New Feature`, input `feature_1`, and choose `Lastest development branch`
+3. see new branch `feature_1` in sourcetree
+4. deveoping
+  * add new file `feature_1.txt` in source path
+  * input content `Test1` and commit
+  * input content `Test22` and commit (demo hotfix later)
+  * input content `Test3` and commit
+5. finish feature
+  * back to sourcetree, choose `feature\feature_1` 
+  * click `Git Flow` on top menu -> `Finish Feature`
+  * compare rebase effect 
+  * mention delete branch
+  * auto merge to `develop` branch
+  * checkout to `master` and compare content in source path
+  * push to server
+
+# Start Release
+1. back to sourcetree and click `Git Flow` on top menu
+2. click `Start New Release`, input `release_1`, and choose `Lastest development branch`
+3. see new branch `release_1` in sourcetree
+4. testing and fix bug
+  * input content `Test4` in `feature_1.txt` and commit
+  * input content `Test5` in `feature_1.txt` and commit
+5. finish release
+  * back to sourcetree and choose `release\release_1`
+  * click `Git Flow` on top menu -> `Finish Release`
+  * input tag `v0.1` to comment the release is version 0.1
+  * mention: auto merge to `develop` and `master`
+  * checkout to `master` and compare content in source path
+  * push to server
+
+# Start Hotfix
+1. back to sourcetree and click `Git Flow` on top menu
+2. click `Start New Hotfix` and input `bug1`
+3. see new branch `bug1` in sourcetree
+4. fix bug
+  * open `feature_1.txt`, fix `Test22` to `Test2` and commit
+5. finish hotfix
+  * back to sourcetree and choose `hotfix\bug1`
+  * click `Git Flow` on top menu -> `Finish Hotfix`
+  * tag (option)
+  * mention: auto merge to `develop` and `master`
+  * checkout to `master` and compare content in source path
+  * push to server
+
+# Mix
