@@ -51,7 +51,7 @@
 5. finish feature
   * back to sourcetree, choose `feature\feature_1` 
   * click `Git Flow` on top menu -> `Finish Feature`
-  * compare rebase effect 
+  * compare rebase effect (do not use rebase)
   * mention delete branch
   * auto merge to `develop` branch
   * checkout to `master` and compare content in source path
@@ -104,7 +104,7 @@
 8. finish feature
 9. start and finish release
 
-# Mix - Commit (do not suggest)
+# Mix - Commit
 1. start a Feature: `feature_3`
   * copy file `feature_1.txt` to `feature_3.txt`
   * input `Test3-1` in `feature_1.txt`
