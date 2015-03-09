@@ -13,6 +13,7 @@
 # Create New Repository and Clone It 
 1. create new repository `test-git-flow` on GitHub
 2. copy url like `git@github.com:your_account/test-git-flow.git`
+  * FEEC Can't use SSH. Use HTTS (`https://github.com/your_account/feec-git-flow.git`) instead.
 3. SourceTree -> Clone/New -> paste url in `Source Path / URL` and change Destination Path (Option)
 
 # First Commit and Push
